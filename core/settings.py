@@ -52,9 +52,12 @@ INSTALLED_APPS = [
     'my_placeholder',
     # 'radis',
     'django_rq',
+    "query",
     
      'django_otp', 
  'django_otp.plugins.otp_totp',
+ 
+ 'location',
 ]
 RQ_QUEUES = {
     'default': {

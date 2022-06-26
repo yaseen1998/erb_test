@@ -24,5 +24,7 @@ urlpatterns = [
     path('create/', include('ddmapp.urls')),
     path('cache/',CacheTest.as_view()),
     # path("radis/", include("radis.urls")),
-    path("django-rq/", include("django_rq.urls"))
+    path("django-rq/", include("django_rq.urls")),
+    path("query/", include("query.urls")),
+    path('location/',include('location.urls')),
 ]
