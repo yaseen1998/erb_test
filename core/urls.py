@@ -23,6 +23,6 @@ urlpatterns = [
     path('list/',Firebase.as_view()),
     path('create/', include('ddmapp.urls')),
     path('cache/',CacheTest.as_view()),
-    path("radis/", include("radis.urls")),
+    # path("radis/", include("radis.urls")),
     path("django-rq/", include("django_rq.urls"))
 ]

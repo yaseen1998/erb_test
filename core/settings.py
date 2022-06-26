@@ -50,8 +50,11 @@ INSTALLED_APPS = [
     'ddmapp',
     'fake_app',
     'my_placeholder',
-    'radis',
+    # 'radis',
     'django_rq',
+    
+     'django_otp', 
+ 'django_otp.plugins.otp_totp',
 ]
 RQ_QUEUES = {
     'default': {
@@ -74,7 +77,9 @@ MIDDLEWARE = [
     
     'django.middleware.cache.FetchFromCacheMiddleware',
     
-    'radis.middleware.middleware'
+    # 'radis.middleware.middleware',
+    
+    'django.middleware.clickjacking.XFrameOptionsMiddleware' ,
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -85,20 +90,20 @@ DYNAMIC_MODELS = {
     'USE_APP_LABEL': 'ddmapp',
     'CACHE_KEY_PREFIX': 'ddmapp_',
 }
-CACHE_TTL = 60 * 1500
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
-SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
+# CACHE_TTL = 60 * 1500
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/1",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
+# SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
 
 
-SESSION_CACHE_ALIAS = "default"
+# SESSION_CACHE_ALIAS = "default"
 
 
 
