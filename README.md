@@ -1,1 +1,2 @@
 MFA = https://arnopretorius.medium.com/multi-factor-authentication-mfa-for-your-django-admin-page-72009e38cf62
+DJANGO_JET = https://betterprogramming.pub/a-better-admin-for-your-django-app-b6302ae06847
