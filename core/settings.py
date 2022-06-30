@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     # 'radis',
     'django_rq',
     
+    'twilios',
+    
      'django_otp', 
  'django_otp.plugins.otp_totp',
 ]
@@ -176,7 +178,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+TWILIO_ACCOUNT_SID = 'test'
+TWILIO_AUTH_TOKEN = 'test'
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
